@@ -24,10 +24,10 @@ namespace Cotacoes.Controllers
                     "SELECT Sigla" +
                         ",NomeMoeda" +
                         ",UltimaCotacao" +
-                        ",ValorComercial AS Cotacoes.Comercial" +
-                        ",ValorTurismo AS Cotacoes.Turismo" +
-                    "FROM dbo.Cotacoes" +
-                    "ORDER BY NomeMoeda" +
+                        ",ValorComercial AS Comercial" +
+                        ",ValorTurismo AS Turismo " +
+                    "FROM dbo.Cotacoes " +
+                    "ORDER BY NomeMoeda " +
                     "FOR JSON PATH, ROOT('Moedas')";
 
                 conexao.Open();
